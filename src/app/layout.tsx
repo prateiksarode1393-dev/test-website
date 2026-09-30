@@ -5,7 +5,7 @@ import Script from 'next/script';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased overflow-x-hidden">
         <MainLayout>{children}</MainLayout>
         <Script
           id="cloudflare-web-analytics"

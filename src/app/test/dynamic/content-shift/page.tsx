@@ -66,8 +66,8 @@ export default function ContentShiftPage() {
 
         <div className="lg:col-span-2 space-y-6">
           <div
-            className="p-8 rounded-3xl bg-[#0f0f12] border border-slate-800 min-h-[500px] transition-transform duration-500"
-            style={{ transform: `translateX(${shift}px)` }}
+            className="p-8 rounded-3xl bg-[#0f0f12] border border-slate-800 min-h-[500px] transition-transform duration-500 max-w-full box-border"
+            style={{ transform: `translateX(${shift}px)`, width: '100%' }}
           >
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-xl font-bold text-white">Live Content Stream</h2>
