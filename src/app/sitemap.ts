@@ -4,12 +4,12 @@ import { SITE_ROUTES } from '@/lib/routes';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://chaosnet.local';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://test-website.pages.dev';
 
   return SITE_ROUTES.map(route => ({
     url: `${baseUrl}${route.path}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: route.description ? 0.9 : 0.7,
+    lastmod: new Date(),
+    changefreq: 'weekly',
+    priority: route.path === '/' ? 1 : 0.7,
   }));
 }

@@ -1,7 +1,6 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useState } from 'react';
-export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { Cpu, Activity, ArrowLeft, Timer } from 'lucide-react';
 import Link from 'next/link';
@@ -13,23 +12,29 @@ export default function WebWorkerPage() {
   const [startTime, setStartTime] = useState<number | null>(null);
   const [duration, setDuration] = useState<number | null>(null);
 
-  const startCompute = () => {
-    setIsComputing(true);
-    setResult(null);
-    setStartTime(Date.now());
+  useEffect(() => {
+    // AUTO-TRIGGER: Start computation on page load
+    const startCompute = () => {
+      setIsComputing(true);
+      setResult(null);
+      const now = Date.now();
+      setStartTime(now);
 
-    // Create worker from public asset
-    const worker = new Worker('/workers/compute.js');
+      // Create worker from public asset
+      const worker = new Worker('/workers/compute.js');
 
-    worker.onmessage = (e) => {
-      setResult(e.data.value.toFixed(2));
-      setDuration((Date.now() - (startTime || Date.now())) / 1000);
-      setIsComputing(false);
-      worker.terminate();
+      worker.onmessage = (e) => {
+        setResult(e.data.value.toFixed(2));
+        setDuration((Date.now() - now) / 1000);
+        setIsComputing(false);
+        worker.terminate();
+      };
+
+      worker.postMessage('start_computation');
     };
 
-    worker.postMessage('start_computation');
-  };
+    startCompute();
+  }, []);
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
@@ -41,30 +46,35 @@ export default function WebWorkerPage() {
       </div >
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="p-8 rounded-3xl bg-[#0f0f12] border border-slate-800 space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="p-8 rounded-3xl bg-[#0f0f12] border border-slate-800 space-y-6"
+        >
           <div className="flex items-center gap-3 text-purple-400">
             <Cpu className="w-6 h-6" />
             <h2 className="text-xl font-bold">Off-Main-Thread</h2>
           </div >
 
           <p className="text-slate-500 text-sm">
-            This page spawns a background worker to calculate a large sum.
+            This page spawns a background worker to calculate a large sum automatically on load.
             The main thread remains responsive while the computation happens.
           </p>
 
-          <button
-            onClick={startCompute}
-            disabled={isComputing}
-            className={cn(
-              "w-full py-3 rounded-xl font-semibold transition-all",
-              isComputing ? "bg-slate-800 text-slate-500 cursor-not-allowed" : "bg-purple-600 hover:bg-purple-500 text-white"
-            )}
-          >
-            {isComputing ? 'Computing...' : 'Start Heavy Task'}
-          </button>
-        </div >
+          <div className={cn(
+            "w-full py-3 rounded-xl font-semibold text-center transition-all",
+            isComputing ? "bg-slate-800 text-slate-500" : "bg-green-900/30 text-green-400 border border-green-500/30"
+          )}>
+            {isComputing ? 'Computation Running...' : 'Computation Completed'}
+          </div>
+        </motion.div>
 
-        <div className="p-8 rounded-3xl bg-[#0f0f12] border border-slate-800 space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="p-8 rounded-3xl bg-[#0f0f12] border border-slate-800 space-y-6"
+        >
           <div className="flex items-center gap-3 text-blue-400">
             <Activity className="w-6 h-6" />
             <h2 className="text-xl font-bold">Result</h2>
@@ -84,9 +94,8 @@ export default function WebWorkerPage() {
               </span>
             )}
           </div >
-        </div >
+        </motion.div>
       </div >
     </div >
   );
 }
-
