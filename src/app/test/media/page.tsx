@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 
@@ -7,22 +7,22 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const WORKING_VIDEOS = [
-  // Third-Party Embeds (Verified Playable on Localhost)
-  { name: 'YouTube', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', color: 'text-red-500', type: 'third-party' },
+  // Third-Party Embeds (Verified Playable)
+  { name: 'YouTube', url: 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', color: 'text-red-500', type: 'third-party' },
   { name: 'Vimeo', url: 'https://player.vimeo.com/video/76979871', color: 'text-blue-400', type: 'third-party' },
-  { name: 'Dailymotion', url: 'https://www.dailymotion.com/embed/x7l7z8u', color: 'text-blue-600', type: 'third-party' },
-  { name: 'Archive.org', url: 'https://archive.org/embed/items/BigBuckBunny_2008-01-25/BigBuckBunny_2008-01-25.html', color: 'text-slate-400', type: 'third-party' },
+  { name: 'DailyMotion', url: 'https://www.dailymotion.com/embed/x7l7z8u', color: 'text-blue-600', type: 'third-party' },
+  { name: 'Cloudflare Stream', url: 'https://customer-7asv3m7n0v2777v.cloudflarestream.com/embed/f74a57663f8745f4b402c8860c078e0e', color: 'text-orange-400', type: 'third-party' },
 
-  // Native Streams (Verified High-Bandwidth Public Buckets)
-  { name: 'Native MP4', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', color: 'text-green-400', type: 'native' },
-  { name: 'Native WebM', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.webm', color: 'text-green-600', type: 'native' },
-  { name: 'Native OGG', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', color: 'text-green-700', type: 'native' },
-  { name: 'Alternative MP4', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', color: 'text-green-500', type: 'native' },
+  // Native Streams (High-Bandwidth Public Buckets)
+  { name: 'Native MP4 (Big Buck Bunny)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', color: 'text-green-400', type: 'native' },
+  { name: 'Native WebM (Elephant Dream)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.webm', color: 'text-green-600', type: 'native' },
+  { name: 'Native MP4 (Tears of Steel)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', color: 'text-green-500', type: 'native' },
+  { name: 'Direct Stream (Sample)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', color: 'text-green-700', type: 'native' },
 ];
 
 export default function MediaHub() {
   return (
-    <div className="max-w-7xl mx-auto space-y-12">
+    <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-white tracking-tight">Media <span className="text-green-500">Testing Hub</span></h1>
         <p className="text-slate-400 max-w-2xl">
@@ -95,4 +95,3 @@ export default function MediaHub() {
     </div >
   );
 }
-

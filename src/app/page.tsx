@@ -108,7 +108,7 @@ const TEST_CATEGORIES = [
 
 export default function Dashboard() {
   return (
-    <div className="max-w-7xl mx-auto space-y-12">
+    <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
       <section className="relative p-8 rounded-3xl bg-gradient-to-br from-blue-600/10 via-transparent to-transparent border border-blue-500/20 overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-3xl rounded-full -mr-32 -mt-32" />
@@ -117,15 +117,15 @@ export default function Dashboard() {
             <Terminal className="w-4 h-4" />
             <span className="text-xs font-mono uppercase tracking-widest font-semibold">System Initialized</span>
           </div>
-          <h1 className="text-5xl font-bold text-white tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
             Crawler <span className="text-blue-500">Stress Test</span> Ground
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
+          <p className="text-slate-400 text-base md:text-lg max-w-2xl leading-relaxed">
             Welcome to the high-fidelity benchmarking environment. This platform is engineered
             with intentional architectural flaws and modern web traps to push headless browsers
             to their absolute operational limits.
           </p>
-          <div className="flex gap-4 pt-4">
+          <div className="flex flex-wrap gap-4 pt-4">
             <Link
               href="/test/media"
               className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 group"
