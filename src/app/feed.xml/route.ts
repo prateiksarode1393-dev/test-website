@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { SITE_ROUTES } from '@/lib/routes';
 
+export const runtime = 'edge';
+
 export async function GET() {
   const items = SITE_ROUTES.map(route => `
     <item>
