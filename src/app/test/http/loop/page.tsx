@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { AlertTriangle, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
@@ -34,7 +33,7 @@ export default function RedirectLoop() {
             onClick={() => window.location.reload()}
             className="px-8 py-3 rounded-full bg-red-600 text-white font-bold hover:bg-red-500 transition-all shadow-lg shadow-red-600/20"
           >
-            Trigger Loop ↻
+            Trigger Loop â†»
           </button>
           <Link
             href="/test/http"
@@ -47,3 +46,4 @@ export default function RedirectLoop() {
     </div >
   );
 }
+

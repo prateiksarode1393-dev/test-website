@@ -1,7 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
+export const dynamic = 'force-static';
 import { Video, Music, Download } from 'lucide-react';
-
-export const runtime = 'edge';
 
 const NATIVE_VIDEOS = [
   { name: 'MP4 Standard', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', ext: '.mp4', type: 'video/mp4' },
@@ -86,3 +85,4 @@ export default function NativeMedia() {
     </div >
   );
 }
+

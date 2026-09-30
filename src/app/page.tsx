@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import {
   Activity,
@@ -219,3 +218,4 @@ export default function Dashboard() {
     </div>
   );
 }
+

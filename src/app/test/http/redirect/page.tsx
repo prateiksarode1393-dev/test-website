@@ -1,7 +1,6 @@
-import { redirect } from 'next/navigation';
+﻿import { redirect } from 'next/navigation';
 
-export const runtime = 'edge';
-
+export const dynamic = 'force-static';
 export default function RedirectPage() {
   // We can use a query param to decide which redirect chain to use
   // Example: /test/http/redirect?type=external
@@ -17,3 +16,4 @@ export default function RedirectPage() {
     </div>
   );
 }
+

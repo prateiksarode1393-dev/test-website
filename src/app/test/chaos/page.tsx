@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 
-export const runtime = 'edge';
 import { Cpu, Zap, AlertTriangle, ArrowLeft, Activity } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -89,7 +89,7 @@ export default function ChaosHub() {
         <p className="text-slate-400 max-w-2xl">
           The ultimate stability test. These modules are designed to crash the browser tab,
           exhaust system memory, or freeze the operational thread.
-          <span className="text-red-400 font-semibold block mt-2">⚠️ Warning: May cause browser instability.</span>
+          <span className="text-red-400 font-semibold block mt-2">âš ï¸ Warning: May cause browser instability.</span>
         </p>
       </div >
 
@@ -124,3 +124,4 @@ export default function ChaosHub() {
     </div >
   );
 }
+

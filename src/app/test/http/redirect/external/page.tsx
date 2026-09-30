@@ -1,7 +1,6 @@
-import { redirect } from 'next/navigation';
+﻿import { redirect } from 'next/navigation';
 
-export const runtime = 'edge';
-
+export const dynamic = 'force-static';
 export default function ExternalRedirectPage() {
   // Redirect to an external site
   redirect('https://www.google.com');
@@ -9,3 +8,4 @@ export default function ExternalRedirectPage() {
   // This part is never reached
   return null;
 }
+

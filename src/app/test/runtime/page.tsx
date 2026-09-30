@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 
-export const runtime = 'edge';
 import { Cpu, Zap, Globe, ArrowLeft, Activity } from 'lucide-react';
 import Link from 'next/link';
 
@@ -73,3 +73,4 @@ function RuntimeCard({ title, desc, icon: Icon, href, color }: any) {
 
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
+

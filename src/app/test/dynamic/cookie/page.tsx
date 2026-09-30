@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState, useEffect } from 'react';
+export const dynamic = 'force-static';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, X, Bell, Zap } from 'lucide-react';
 import Link from 'next/link';
@@ -105,3 +104,4 @@ export default function CookiePopup() {
     </div >
   );
 }
+

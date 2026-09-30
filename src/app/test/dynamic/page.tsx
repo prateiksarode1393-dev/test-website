@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 
-export const runtime = 'edge';
 import { Zap, EyeOff, Lock, ArrowLeft, Clock } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -78,3 +78,4 @@ export default function DynamicHub() {
     </div >
   );
 }
+

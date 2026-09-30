@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState } from 'react';
+export const dynamic = 'force-static';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Lock, Key, CheckCircle, Trophy } from 'lucide-react';
 import Link from 'next/link';
@@ -174,3 +173,4 @@ export default function StateDependentPage() {
     </div>
   );
 }
+

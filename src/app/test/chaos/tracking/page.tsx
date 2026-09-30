@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState, useEffect } from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Link as LinkIcon, Hash } from 'lucide-react';
 import Link from 'next/link';
@@ -59,7 +58,7 @@ export default function TrackingLoop() {
               href={generateLink(i)}
               className="p-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-center font-semibold transition-all border border-slate-700"
             >
-              Append Parameter {i} ➔
+              Append Parameter {i} âž”
             </Link>
           ))}
         </div >
@@ -73,3 +72,4 @@ export default function TrackingLoop() {
     </div >
   );
 }
+

@@ -1,7 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
+export const dynamic = 'force-static';
 import { PlayCircle, AlertTriangle } from 'lucide-react';
-
-export const runtime = 'edge';
 
 const PROVIDERS = [
   { name: 'YouTube', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
@@ -46,3 +45,4 @@ export default function MixedMediaHub() {
     </div >
   );
 }
+

@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Zap, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -71,3 +70,4 @@ export default function InfiniteScroll() {
     </div >
   );
 }
+

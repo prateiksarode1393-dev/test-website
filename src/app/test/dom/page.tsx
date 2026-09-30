@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 
-export const runtime = 'edge';
 import { Layers, Zap, AlertCircle, ArrowLeft, MousePointer2 } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -105,3 +105,4 @@ export default function DomHub() {
     </div >
   );
 }
+

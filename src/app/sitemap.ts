@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { SITE_ROUTES } from '@/lib/routes';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://chaosnet.local';
 

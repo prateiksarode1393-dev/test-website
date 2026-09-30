@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 
-export const runtime = 'edge';
 import { Map, ArrowRight, Globe, Zap, Shield, Layers, PlayCircle, Activity, Cpu } from 'lucide-react';
 import Link from 'next/link';
 import { SITE_ROUTES } from '@/lib/routes';
@@ -80,3 +80,4 @@ export default function HTMLSitemap() {
     </div>
   );
 }
+

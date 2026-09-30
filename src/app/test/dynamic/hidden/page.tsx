@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState, CSSProperties } from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { EyeOff, Eye, ArrowLeft, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -96,3 +95,4 @@ export default function HiddenPage() {
     </div >
   );
 }
+

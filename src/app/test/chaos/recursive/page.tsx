@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState, useEffect } from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { ArrowLeft, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
@@ -67,3 +66,4 @@ export default function RecursiveTrap() {
 }
 
 import { Zap } from 'lucide-react';
+

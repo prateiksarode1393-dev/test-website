@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState, useEffect } from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { AlertTriangle, ArrowLeft, XCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -60,3 +59,4 @@ export default function PopupStormPage() {
     </div>
   );
 }
+

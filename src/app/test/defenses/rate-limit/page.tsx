@@ -1,8 +1,7 @@
-'use client';
-
-export const runtime = 'edge';
+﻿'use client';
 
 import React, { useState, useEffect } from 'react';
+export const dynamic = 'force-static';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Zap, AlertTriangle } from 'lucide-react';
 import Link from 'next/link';
@@ -55,3 +54,4 @@ export default function RateLimit() {
     </div>
   );
 }
+
