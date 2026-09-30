@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export const runtime = 'edge';
-import { Map, ArrowRight, Globe, Zap, Shield, Layers, PlayCircle, Activity } from 'lucide-react';
+import { Map, ArrowRight, Globe, Zap, Shield, Layers, PlayCircle, Activity, Cpu } from 'lucide-react';
 import Link from 'next/link';
 import { SITE_ROUTES } from '@/lib/routes';
 
