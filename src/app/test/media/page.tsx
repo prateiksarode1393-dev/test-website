@@ -13,11 +13,11 @@ const WORKING_VIDEOS = [
   { name: 'DailyMotion', url: 'https://www.dailymotion.com/embed/x7l7z8u', color: 'text-blue-600', type: 'third-party' },
   { name: 'Cloudflare Stream', url: 'https://customer-7asv3m7n0v2777v.cloudflarestream.com/embed/f74a57663f8745f4b402c8860c078e0e', color: 'text-orange-400', type: 'third-party' },
 
-  // Native Localized-Style Streams (Reliable Public Assets)
-  { name: 'Native MP4 (Sample)', url: 'https://www.w3schools.com/html/mov_bbb.mp4', color: 'text-green-400', type: 'native' },
-  { name: 'Native WebM (Sample)', url: 'https://www.w3schools.com/html/movie.mp4', color: 'text-green-600', type: 'native' },
-  { name: 'Direct Stream (Sample)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', color: 'text-green-700', type: 'native' },
-  { name: 'Alternative MP4 (Sample)', url: 'https://www.w3schools.com/html/mov_bbb.mp4', color: 'text-green-500', type: 'native' },
+  // Native Localized-Style Streams (Using extremely reliable, CORS-friendly assets)
+  { name: 'Native MP4 (Basic)', url: 'https://www.w3schools.com/html/mov_bbb.mp4', color: 'text-green-400', type: 'native' },
+  { name: 'Native MP4 (Alternative)', url: 'https://www.w3schools.com/html/movie.mp4', color: 'text-green-600', type: 'native' },
+  { name: 'Direct Stream (Sample)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', color: 'text-green-700', type: 'native' },
+  { name: 'Native MP4 (Fast)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', color: 'text-green-500', type: 'native' },
 ];
 
 export default function MediaHub() {
