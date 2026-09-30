@@ -84,7 +84,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
 
       {/* Sidebar */}
       <aside className={cn(
-        "fixed lg:sticky top-0 z-40 h-screen w-64 border-r border-slate-800 bg-[#0f0f12] flex flex-col transition-transform duration-300 ease-in-out",
+        "fixed lg:sticky top-0 z-50 h-screen w-64 border-r border-slate-800 bg-[#0f0f12] flex flex-col transition-transform duration-300 ease-in-out",
         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
       )}>
         <div className="p-6 flex items-center gap-3 border-b border-slate-800">
