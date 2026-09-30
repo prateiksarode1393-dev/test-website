@@ -7,17 +7,17 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const WORKING_VIDEOS = [
-  // Third-Party Embeds (Verified Playable)
+  // Third-Party Embeds (Using the most compatible embed formats for crawlers)
   { name: 'YouTube', url: 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', color: 'text-red-500', type: 'third-party' },
   { name: 'Vimeo', url: 'https://player.vimeo.com/video/76979871', color: 'text-blue-400', type: 'third-party' },
   { name: 'DailyMotion', url: 'https://www.dailymotion.com/embed/x7l7z8u', color: 'text-blue-600', type: 'third-party' },
   { name: 'Cloudflare Stream', url: 'https://customer-7asv3m7n0v2777v.cloudflarestream.com/embed/f74a57663f8745f4b402c8860c078e0e', color: 'text-orange-400', type: 'third-party' },
 
-  // Native Localized-Style Streams (Using extremely reliable, CORS-friendly assets)
-  { name: 'Native MP4 (Basic)', url: 'https://www.w3schools.com/html/mov_bbb.mp4', color: 'text-green-400', type: 'native' },
-  { name: 'Native MP4 (Alternative)', url: 'https://www.w3schools.com/html/movie.mp4', color: 'text-green-600', type: 'native' },
-  { name: 'Direct Stream (Sample)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', color: 'text-green-700', type: 'native' },
-  { name: 'Native MP4 (Fast)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', color: 'text-green-500', type: 'native' },
+  // Native Localized-Style Streams (Require local files in /public/videos/)
+  { name: 'Native MP4 (Basic)', url: '/videos/sample.mp4', color: 'text-green-400', type: 'native' },
+  { name: 'Native MP4 (Alternative)', url: '/videos/alt_sample.mp4', color: 'text-green-600', type: 'native' },
+  { name: 'Direct Stream (Sample)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', color: 'text-green-700', type: 'native' },
+  { name: 'Native MP4 (Fast)', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', color: 'text-green-500', type: 'native' },
 ];
 
 export default function MediaHub() {
@@ -48,7 +48,12 @@ export default function MediaHub() {
                   {provider.type === 'native' ? (
                     <video src={provider.url} controls className="w-full h-full" preload="auto" />
                   ) : (
-                    <iframe src={provider.url} className="w-full h-full" allow="autoplay; fullscreen" allowFullScreen />
+                    <iframe
+                      src={provider.url}
+                      className="w-full h-full"
+                      allow="autoplay; fullscreen; encrypted-media"
+                      allowFullScreen
+                    />
                   )}
                 </div >
               </div >
@@ -91,7 +96,7 @@ export default function MediaHub() {
             <li key={v.name}><a href={v.url}>{v.name}</a></li>
           ))}
         </ul>
-      </div>
+      </div >
     </div >
   );
 }
