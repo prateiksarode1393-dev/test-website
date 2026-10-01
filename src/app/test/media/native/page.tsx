@@ -4,29 +4,29 @@ import { Video, Music, Download } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NATIVE_VIDEOS = [
-  { name: 'MP4 Standard', url: '/videos/sample.mp4', ext: '.mp4', type: 'video/mp4' },
-  { name: 'WebM Standard', url: '/videos/alt_sample.mp4', ext: '.webm', type: 'video/webm' },
-  { name: 'OGG Video', url: '/videos/test.ogv', ext: '.ogv', type: 'video/ogg' },
-  { name: 'MOV Format', url: '/videos/test.mov', ext: '.mov', type: 'video/quicktime' },
-  { name: 'AVI Format', url: '/videos/test.avi', ext: '.avi', type: 'video/x-msvideo' },
-  { name: 'WMV Format', url: '/videos/test.wmv', ext: '.wmv', type: 'video/x-ms-wmv' },
-  { name: 'FLV Format', url: '/videos/test.flv', ext: '.flv', type: 'video/x-flv' },
-  { name: 'M4V Format', url: '/videos/test.m4v', ext: '.m4v', type: 'video/mp4' },
-  { name: '3GP Format', url: '/videos/test.3gp', ext: '.3gp', type: 'video/3gpp' },
-  { name: 'MKV Format', url: '/videos/test.mkv', ext: '.mkv', type: 'video/x-matroska' },
+  { name: 'MP4 Standard', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.mp4', type: 'video/mp4' },
+  { name: 'WebM Standard', url: 'https://www.w3schools.com/html/movie.webm', ext: '.webm', type: 'video/webm' },
+  { name: 'OGG Video', url: 'https://www.w3schools.com/html/movie.ogv', ext: '.ogv', type: 'video/ogg' },
+  { name: 'MOV Format', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.mov', type: 'video/quicktime' },
+  { name: 'AVI Format', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.avi', type: 'video/x-msvideo' },
+  { name: 'WMV Format', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.wmv', type: 'video/x-ms-wmv' },
+  { name: 'FLV Format', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.flv', type: 'video/x-flv' },
+  { name: 'M4V Format', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.m4v', type: 'video/mp4' },
+  { name: '3GP Format', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.3gp', type: 'video/3gpp' },
+  { name: 'MKV Format', url: 'https://www.w3schools.com/html/mov_bbb.mp4', ext: '.mkv', type: 'video/x-matroska' },
 ];
 
 const NATIVE_AUDIO = [
   { name: 'MP3 Standard', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.mp3', type: 'audio/mpeg' },
-  { name: 'WAV Lossless', url: '/audio/test.wav', ext: '.wav', type: 'audio/wav' },
-  { name: 'OGG Vorbis', url: '/audio/test.ogg', ext: '.ogg', type: 'audio/ogg' },
-  { name: 'AAC Format', url: '/audio/test.aac', ext: '.aac', type: 'audio/aac' },
-  { name: 'M4A Format', url: '/audio/test.m4a', ext: '.m4a', type: 'audio/mp4' },
-  { name: 'FLAC Lossless', url: '/audio/test.flac', ext: '.flac', type: 'audio/flac' },
-  { name: 'AIFF Format', url: '/audio/test.aiff', ext: '.aiff', type: 'audio/x-aiff' },
-  { name: 'MID Sequence', url: '/audio/test.mid', ext: '.mid', type: 'audio/midi' },
-  { name: 'WMA Format', url: '/audio/test.wma', ext: '.wma', type: 'audio/x-ms-wma' },
-  { name: 'Opus Stream', url: '/audio/test.opus', ext: '.opus', type: 'audio/opus' },
+  { name: 'WAV Lossless', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.wav', type: 'audio/wav' },
+  { name: 'OGG Vorbis', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.ogg', type: 'audio/ogg' },
+  { name: 'AAC Format', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.aac', type: 'audio/aac' },
+  { name: 'M4A Format', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.m4a', type: 'audio/mp4' },
+  { name: 'FLAC Lossless', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.flac', type: 'audio/flac' },
+  { name: 'AIFF Format', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.aiff', type: 'audio/x-aiff' },
+  { name: 'MID Sequence', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.mid', type: 'audio/midi' },
+  { name: 'WMA Format', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.wma', type: 'audio/x-ms-wma' },
+  { name: 'Opus Stream', url: 'https://www.w3schools.com/html/horse.mp3', ext: '.opus', type: 'audio/opus' },
 ];
 
 export default function NativeMedia() {

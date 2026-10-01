@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://chaosnet.local/sitemap.xml',
+    // Sitemap removed to avoid hardcoding domain for Cloudflare dynamic environments
   };
 }

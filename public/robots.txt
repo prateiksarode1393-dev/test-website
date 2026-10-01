@@ -1,14 +1,2 @@
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
-
-# Explicitly allowing the test paths to ensure crawlers find them
-Allow: /test/media
-Allow: /test/defenses
-Allow: /test/http
-Allow: /test/dom
-Allow: /test/chaos
-Allow: /test/dynamic
-
-# Trap for aggressive crawlers:
-Disallow: /secret-trap/
