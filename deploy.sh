@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-echo "🚀 Starting Static Build Process..."
+echo "🚀 Starting OpenNext Build Process..."
 
 # 1. Install dependencies
 echo "📦 Installing dependencies..."
 npm install --legacy-peer-deps
 
-# 2. Build the project (this will now produce the 'out' directory)
-echo "🏗️  Running Next.js static build..."
-npm run build
+# 2. Build the project using OpenNext for Cloudflare
+echo "🏗️  Running OpenNext build for Cloudflare..."
+npm run build:cloudflare
 
-echo "✅ Build complete. Static files are in the 'out' directory."
+echo "✅ Build complete. Assets are in the .open-next directory."
