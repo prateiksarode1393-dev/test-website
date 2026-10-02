@@ -32,8 +32,6 @@ test.describe('Native Media Assets', () => {
     for (const video of NATIVE_VIDEOS) {
       const response = await request.get(video.url);
       expect(response.status()).toBe(200);
-      // Note: Cloudflare/Next.js might serve these as application/octet-stream if not configured,
-      // but we check for existence first.
       console.log(`Video ${video.url} status: ${response.status()} type: ${response.headers()['content-type']}`);
     }
   });
@@ -50,17 +48,16 @@ test.describe('Native Media Assets', () => {
     await page.goto('/test/media/native');
 
     // Test MP4 Video
-    const mp4Video = page.locator('video source[src="/videos/sample.mp4"]').parentElement();
-    if (mp4Video) {
-      const readyState = await mp4Video.evaluate((el) => el.readyState);
-      // readyState 1 = HAVE_CURRENT_DATA, 2 = HAVE_FUTURE_DATA, 3 = HAVE_POTENTIALLY_ENOUGH_DATA, 4 = HAVE_ENOUGH_DATA
+    const mp4Video = page.locator('video source[src="/videos/sample.mp4"]').locator('xpath=..');
+    if (await mp4Video.count() > 0) {
+      const readyState = await mp4Video.evaluate((el: HTMLVideoElement) => el.readyState);
       expect(readyState).toBeGreaterThanOrEqual(1);
     }
 
     // Test MP3 Audio
-    const mp3Audio = page.locator('audio source[src="/audio/test.mp3"]').parentElement();
-    if (mp3Audio) {
-      const readyState = await mp3Audio.evaluate((el) => el.readyState);
+    const mp3Audio = page.locator('audio source[src="/audio/test.mp3"]').locator('xpath=..');
+    if (await mp3Audio.count() > 0) {
+      const readyState = await mp3Audio.evaluate((el: HTMLAudioElement) => el.readyState);
       expect(readyState).toBeGreaterThanOrEqual(1);
     }
   });
