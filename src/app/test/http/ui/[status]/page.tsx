@@ -12,6 +12,7 @@ export async function generateStaticParams() {
   ].map(status => ({ status }));
 }
 
-export default function HttpStatusPage({ params }: { params: { status: string } }) {
-  return <HttpStatusContent status={params.status} />;
+export default async function HttpStatusPage({ params }: { params: Promise<{ status: string }> }) {
+  const resolvedParams = await params;
+  return <HttpStatusContent status={resolvedParams.status} />;
 }
