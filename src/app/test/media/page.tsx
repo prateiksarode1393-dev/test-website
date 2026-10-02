@@ -75,6 +75,30 @@ export default function MediaHub() {
               <h3 className="text-white font-semibold">Mixed Media Hub</h3>
               <p className="text-slate-500 text-xs">Density stress test</p>
             </Link>
+            <Link href="/test/media/vimeo" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">Vimeo</h3>
+              <p className="text-slate-500 text-xs">Vimeo embed sources</p>
+            </Link>
+            <Link href="/test/media/kaltura" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">Kaltura</h3>
+              <p className="text-slate-500 text-xs">Kaltura embed sources</p>
+            </Link>
+            <Link href="/test/media/soundcloud" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">SoundCloud</h3>
+              <p className="text-slate-500 text-xs">SoundCloud embed sources</p>
+            </Link>
+            <Link href="/test/media/dailymotion" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">Dailymotion</h3>
+              <p className="text-slate-500 text-xs">Dailymotion embed sources</p>
+            </Link>
+            <Link href="/test/media/brightcove" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">Brightcove</h3>
+              <p className="text-slate-500 text-xs">Brightcove embed sources</p>
+            </Link>
+            <Link href="/test/media/wistia" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">Wistia</h3>
+              <p className="text-slate-500 text-xs">Wistia embed sources</p>
+            </Link>
             <Link href="/test/media/vault" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
               <h3 className="text-white font-semibold">Asset Vault</h3>
               <p className="text-slate-500 text-xs">Binary downloads (.pdf, .zip)</p>
