@@ -56,6 +56,12 @@ export default function MediaHub() {
                     />
                   )}
                 </div >
+                <div className="p-3 bg-slate-900/30 border-t border-slate-800 flex justify-between items-center">
+                  <span className="text-[10px] text-slate-500 uppercase font-medium">Source URL</span>
+                  <a href={provider.url} target="_blank" className="text-[10px] text-green-400 hover:text-green-300 font-mono underline truncate max-w-[150px]">
+                    {provider.url}
+                  </a>
+                </div >
               </div >
             ))}
           </div >
