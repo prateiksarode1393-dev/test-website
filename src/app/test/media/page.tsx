@@ -105,6 +105,22 @@ export default function MediaHub() {
               <h3 className="text-white font-semibold">Wistia</h3>
               <p className="text-slate-500 text-xs">Wistia embed sources</p>
             </Link>
+            <Link href="/test/media/tiktok" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">TikTok</h3>
+              <p className="text-slate-500 text-xs">TikTok embed sources</p>
+            </Link>
+            <Link href="/test/media/instagram" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">Instagram</h3>
+              <p className="text-slate-500 text-xs">Instagram embed sources</p>
+            </Link>
+            <Link href="/test/media/twitch" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">Twitch</h3>
+              <p className="text-slate-500 text-xs">Twitch stream sources</p>
+            </Link>
+            <Link href="/test/media/jwplayer" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
+              <h3 className="text-white font-semibold">JW Player</h3>
+              <p className="text-slate-500 text-xs">JW Player sources</p>
+            </Link>
             <Link href="/test/media/vault" className="block p-4 rounded-2xl bg-[#0f0f12] border border-slate-800 hover:border-green-500/50 transition-all group">
               <h3 className="text-white font-semibold">Asset Vault</h3>
               <p className="text-slate-500 text-xs">Binary downloads (.pdf, .zip)</p>
