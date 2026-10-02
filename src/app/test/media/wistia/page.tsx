@@ -3,16 +3,17 @@ export const dynamic = 'force-static';
 import { PlayCircle } from 'lucide-react';
 
 const VIDEOS = [
-  { name: 'Wistia Sample 1', url: 'https://fast.wistia.net/embed/iframe/26sk4lmiix' },   { name: 'Wistia Sample 2', url: 'https://fast.wistia.net/embed/iframe/abc123def456' }
+  { name: 'Wistia Sample 1', url: 'https://fast.wistia.net/embed/iframe/26sk4lmiix' },
+  { name: 'Wistia Sample 2', url: 'https://fast.wistia.net/embed/iframe/abc123def456' }
 ];
 
 export default function WistiaPage() {
   return (
     <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold text-white tracking-tight">{name} <span className="text-green-500">Provider Test</span></h1>
+        <h1 className="text-4xl font-bold text-white tracking-tight">Wistia <span className="text-green-500">Provider Test</span></h1>
         <p className="text-slate-400 max-w-2xl">
-          Testing source extraction from {name} embeds. These are public, free videos used for crawler validation.
+          Testing source extraction from Wistia embeds. These are public, free videos used for crawler validation.
         </p>
       </div >
 

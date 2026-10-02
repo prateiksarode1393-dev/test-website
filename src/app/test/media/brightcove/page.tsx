@@ -10,9 +10,9 @@ export default function BrightcovePage() {
   return (
     <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold text-white tracking-tight">{name} <span className="text-green-500">Provider Test</span></h1>
+        <h1 className="text-4xl font-bold text-white tracking-tight">Brightcove <span className="text-green-500">Provider Test</span></h1>
         <p className="text-slate-400 max-w-2xl">
-          Testing source extraction from {name} embeds. These are public, free videos used for crawler validation.
+          Testing source extraction from Brightcove embeds. These are public, free videos used for crawler validation.
         </p>
       </div >
 

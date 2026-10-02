@@ -7,22 +7,22 @@ name = sys.argv[2]
 urls_str = sys.argv[3]
 urls = urls_str.split(',')
 
-# We use double brackets for the JS curly braces to escape them in a python f-string
-template = f"""import React from 'react';
+# Using a raw string and .format() to avoid f-string brace issues with React
+template = """import React from 'react';
 export const dynamic = 'force-static';
 import {{ PlayCircle }} from 'lucide-react';
 
 const VIDEOS = [
-{', '.join([f"  {{ name: '{name} Sample {i+1}', url: '{url}' }}" for i, url in enumerate(urls)])}
+{videos_list}
 ];
 
-export default function {name}Page() {{
+export default function {func_name}() {{
   return (
     <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold text-white tracking-tight">{{name}} <span className="text-green-500">Provider Test</span></h1>
+        <h1 className="text-4xl font-bold text-white tracking-tight">{name} <span className="text-green-500">Provider Test</span></h1>
         <p className="text-slate-400 max-w-2xl">
-          Testing source extraction from {{name}} embeds. These are public, free videos used for crawler validation.
+          Testing source extraction from {name} embeds. These are public, free videos used for crawler validation.
         </p>
       </div >
 
@@ -44,5 +44,14 @@ export default function {name}Page() {{
 }}
 """
 
+videos_list = ",\n".join([f"  {{ name: '{name} Sample {i+1}', url: '{url}' }}" for i, url in enumerate(urls)])
+func_name = name.replace(" ", "").capitalize() + "Page"
+
+content = template.format(
+    videos_list=videos_list,
+    func_name=func_name,
+    name=name
+)
+
 with open(path, 'w', encoding='utf-8') as f:
-    f.write(template)
+    f.write(content)
