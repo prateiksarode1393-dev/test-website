@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Ftest\u002Fhttp\u002Fui\u002F[status]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

@@ -1,0 +1,438 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/test/http/ui/[status]",
+      "regex": "^/test/http/ui/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPstatus": "nxtPstatus"
+      },
+      "namedRegex": "^/test/http/ui/(?<nxtPstatus>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/sitemap.json",
+      "regex": "^/api/sitemap\\.json(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/sitemap\\.json(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/feed.xml",
+      "regex": "^/feed\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/feed\\.xml(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap",
+      "regex": "^/sitemap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap(?:/)?$"
+    },
+    {
+      "page": "/sitemap-video.xml",
+      "regex": "^/sitemap\\-video\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\-video\\.xml(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/test/chaos",
+      "regex": "^/test/chaos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/captcha",
+      "regex": "^/test/chaos/captcha(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/captcha(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/flaky",
+      "regex": "^/test/chaos/flaky(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/flaky(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/gpu",
+      "regex": "^/test/chaos/gpu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/gpu(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/high-failure",
+      "regex": "^/test/chaos/high\\-failure(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/high\\-failure(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/oom",
+      "regex": "^/test/chaos/oom(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/oom(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/popup",
+      "regex": "^/test/chaos/popup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/popup(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/recursive",
+      "regex": "^/test/chaos/recursive(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/recursive(?:/)?$"
+    },
+    {
+      "page": "/test/chaos/tracking",
+      "regex": "^/test/chaos/tracking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/chaos/tracking(?:/)?$"
+    },
+    {
+      "page": "/test/defenses",
+      "regex": "^/test/defenses(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/defenses(?:/)?$"
+    },
+    {
+      "page": "/test/defenses/fingerprint",
+      "regex": "^/test/defenses/fingerprint(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/defenses/fingerprint(?:/)?$"
+    },
+    {
+      "page": "/test/defenses/rate-limit",
+      "regex": "^/test/defenses/rate\\-limit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/defenses/rate\\-limit(?:/)?$"
+    },
+    {
+      "page": "/test/defenses/waf",
+      "regex": "^/test/defenses/waf(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/defenses/waf(?:/)?$"
+    },
+    {
+      "page": "/test/dom",
+      "regex": "^/test/dom(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dom(?:/)?$"
+    },
+    {
+      "page": "/test/dom/infinite-scroll",
+      "regex": "^/test/dom/infinite\\-scroll(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dom/infinite\\-scroll(?:/)?$"
+    },
+    {
+      "page": "/test/dom/live",
+      "regex": "^/test/dom/live(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dom/live(?:/)?$"
+    },
+    {
+      "page": "/test/dom/mismatch",
+      "regex": "^/test/dom/mismatch(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dom/mismatch(?:/)?$"
+    },
+    {
+      "page": "/test/dom/no-load",
+      "regex": "^/test/dom/no\\-load(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dom/no\\-load(?:/)?$"
+    },
+    {
+      "page": "/test/dom/pagination",
+      "regex": "^/test/dom/pagination(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dom/pagination(?:/)?$"
+    },
+    {
+      "page": "/test/dom/shadow",
+      "regex": "^/test/dom/shadow(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dom/shadow(?:/)?$"
+    },
+    {
+      "page": "/test/dynamic",
+      "regex": "^/test/dynamic(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dynamic(?:/)?$"
+    },
+    {
+      "page": "/test/dynamic/content-shift",
+      "regex": "^/test/dynamic/content\\-shift(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dynamic/content\\-shift(?:/)?$"
+    },
+    {
+      "page": "/test/dynamic/cookie",
+      "regex": "^/test/dynamic/cookie(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dynamic/cookie(?:/)?$"
+    },
+    {
+      "page": "/test/dynamic/delayed",
+      "regex": "^/test/dynamic/delayed(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dynamic/delayed(?:/)?$"
+    },
+    {
+      "page": "/test/dynamic/hidden",
+      "regex": "^/test/dynamic/hidden(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dynamic/hidden(?:/)?$"
+    },
+    {
+      "page": "/test/dynamic/shifting",
+      "regex": "^/test/dynamic/shifting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dynamic/shifting(?:/)?$"
+    },
+    {
+      "page": "/test/dynamic/state",
+      "regex": "^/test/dynamic/state(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/dynamic/state(?:/)?$"
+    },
+    {
+      "page": "/test/http",
+      "regex": "^/test/http(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http(?:/)?$"
+    },
+    {
+      "page": "/test/http/loop",
+      "regex": "^/test/http/loop(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/loop(?:/)?$"
+    },
+    {
+      "page": "/test/http/redirect",
+      "regex": "^/test/http/redirect(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/redirect(?:/)?$"
+    },
+    {
+      "page": "/test/http/redirect/external",
+      "regex": "^/test/http/redirect/external(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/redirect/external(?:/)?$"
+    },
+    {
+      "page": "/test/http/redirect/step-2",
+      "regex": "^/test/http/redirect/step\\-2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/redirect/step\\-2(?:/)?$"
+    },
+    {
+      "page": "/test/http/redirect/step-3",
+      "regex": "^/test/http/redirect/step\\-3(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/redirect/step\\-3(?:/)?$"
+    },
+    {
+      "page": "/test/http/redirect/step-4",
+      "regex": "^/test/http/redirect/step\\-4(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/redirect/step\\-4(?:/)?$"
+    },
+    {
+      "page": "/test/http/redirect/success",
+      "regex": "^/test/http/redirect/success(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/redirect/success(?:/)?$"
+    },
+    {
+      "page": "/test/http/slow",
+      "regex": "^/test/http/slow(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/http/slow(?:/)?$"
+    },
+    {
+      "page": "/test/media",
+      "regex": "^/test/media(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media(?:/)?$"
+    },
+    {
+      "page": "/test/media/brightcove",
+      "regex": "^/test/media/brightcove(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/brightcove(?:/)?$"
+    },
+    {
+      "page": "/test/media/dailymotion",
+      "regex": "^/test/media/dailymotion(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/dailymotion(?:/)?$"
+    },
+    {
+      "page": "/test/media/instagram",
+      "regex": "^/test/media/instagram(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/instagram(?:/)?$"
+    },
+    {
+      "page": "/test/media/jwplayer",
+      "regex": "^/test/media/jwplayer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/jwplayer(?:/)?$"
+    },
+    {
+      "page": "/test/media/kaltura",
+      "regex": "^/test/media/kaltura(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/kaltura(?:/)?$"
+    },
+    {
+      "page": "/test/media/mixed",
+      "regex": "^/test/media/mixed(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/mixed(?:/)?$"
+    },
+    {
+      "page": "/test/media/native",
+      "regex": "^/test/media/native(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/native(?:/)?$"
+    },
+    {
+      "page": "/test/media/soundcloud",
+      "regex": "^/test/media/soundcloud(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/soundcloud(?:/)?$"
+    },
+    {
+      "page": "/test/media/tiktok",
+      "regex": "^/test/media/tiktok(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/tiktok(?:/)?$"
+    },
+    {
+      "page": "/test/media/twitch",
+      "regex": "^/test/media/twitch(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/twitch(?:/)?$"
+    },
+    {
+      "page": "/test/media/vault",
+      "regex": "^/test/media/vault(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/vault(?:/)?$"
+    },
+    {
+      "page": "/test/media/vimeo",
+      "regex": "^/test/media/vimeo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/vimeo(?:/)?$"
+    },
+    {
+      "page": "/test/media/wistia",
+      "regex": "^/test/media/wistia(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/media/wistia(?:/)?$"
+    },
+    {
+      "page": "/test/runtime",
+      "regex": "^/test/runtime(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/runtime(?:/)?$"
+    },
+    {
+      "page": "/test/runtime/service-worker",
+      "regex": "^/test/runtime/service\\-worker(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/runtime/service\\-worker(?:/)?$"
+    },
+    {
+      "page": "/test/runtime/web-worker",
+      "regex": "^/test/runtime/web\\-worker(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/runtime/web\\-worker(?:/)?$"
+    },
+    {
+      "page": "/test/runtime/websocket",
+      "regex": "^/test/runtime/websocket(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/test/runtime/websocket(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

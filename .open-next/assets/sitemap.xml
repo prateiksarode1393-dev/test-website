@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core -->
+  <url><loc>https://chaosnet.local/</loc></url>
+
+  <!-- Media -->
+  <url><loc>https://chaosnet.local/test/media</loc></url>
+  <url><loc>https://chaosnet.local/test/media/native</loc></url>
+  <url><loc>https://chaosnet.local/test/media/mixed</loc></url>
+  <url><loc>https://chaosnet.local/test/media/vault</loc></url>
+
+  <!-- Defenses -->
+  <url><loc>https://chaosnet.local/test/defenses</loc></url>
+  <url><loc>https://chaosnet.local/test/defenses/waf</loc></url>
+  <url><loc>https://chaosnet.local/test/defenses/rate-limit</loc></url>
+  <url><loc>https://chaosnet.local/test/defenses/fingerprint</loc></url>
+
+  <!-- HTTP -->
+  <url><loc>https://chaosnet.local/test/http</loc></url>
+  <url><loc>https://chaosnet.local/test/http/loop</loc></url>
+  <url><loc>https://chaosnet.local/test/http/redirect</loc></url>
+  <url><loc>https://chaosnet.local/test/http/redirect/step-2</loc></url>
+  <url><loc>https://chaosnet.local/test/http/redirect/step-3</loc></url>
+  <url><loc>https://chaosnet.local/test/http/redirect/step-4</loc></url>
+  <url><loc>https://chaosnet.local/test/http/slow</loc></url>
+
+  <!-- DOM -->
+  <url><loc>https://chaosnet.local/test/dom</loc></url>
+  <url><loc>https://chaosnet.local/test/dom/infinite-scroll</loc></url>
+  <url><loc>https://chaosnet.local/test/dom/live</loc></url>
+  <url><loc>https://chaosnet.local/test/dom/shadow</loc></url>
+  <url><loc>https://chaosnet.local/test/dom/mismatch</loc></url>
+  <url><loc>https://chaosnet.local/test/dom/no-load</loc></url>
+  <url><loc>https://chaosnet.local/test/dom/pagination</loc></url>
+
+  <!-- Chaos -->
+  <url><loc>https://chaosnet.local/test/chaos</loc></url>
+  <url><loc>https://chaosnet.local/test/chaos/oom</loc></url>
+  <url><loc>https://chaosnet.local/test/chaos/gpu</loc></url>
+  <url><loc>https://chaosnet.local/test/chaos/recursive</loc></url>
+  <url><loc>https:////chaosnet.local/test/chaos/flaky</loc></url>
+  <url><loc>https://chaosnet.local/test/chaos/high-failure</loc></url>
+  <url><loc>https://chaosnet.local/test/chaos/popup</loc></url>
+  <url><loc>https://chaosnet.local/test/chaos/tracking</loc></url>
+
+  <!-- Dynamic -->
+  <url><loc>https://chaosnet.local/test/dynamic</loc></url>
+  <url><loc>https://chaosnet.local/test/dynamic/delayed</loc></url>
+  <url><loc>https://chaosnet.local/test/dynamic/hidden</loc></url>
+  <url><loc>https://chaosnet.local/test/dynamic/state</loc></url>
+  <url><loc>https://chaosnet.local/test/dynamic/shifting</loc></url>
+  <url><loc>https://chaosnet.local/test/dynamic/cookie</loc></url>
+</urlset>
